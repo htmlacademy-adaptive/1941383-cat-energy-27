@@ -23,13 +23,13 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Каталог продукции</a>
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Подбор программы</a>
+          <a class="main-nav__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -44,19 +44,19 @@
 
       <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="get">
 
-        <fieldset class="feedback-form__group feedback-qroup">
-          <ul class="feedback-qroup__list">
-            <li class="feedback-qroup__item">
-              <label class="feedback-qroup__label" for="name">Имя:*</label>
-              <input class="feedback-qroup__input" type="text" id="name" name="name" placeholder="БАРСИК">
+        <fieldset class="feedback-form__group feedback-group">
+          <ul class="feedback-group__list">
+            <li class="feedback-group__item">
+              <label class="feedback-group__label" for="name">Имя:*</label>
+              <input class="feedback-group__input" type="text" id="name" name="name" placeholder="БАРСИК" required>
             </li>
-            <li class="feedback-qroup__item">
-              <label class="feedback-qroup__label" for="weight">Вес (кг):*</label>
-              <input class="feedback-qroup__input" type="number" id="weight" name="weight" placeholder="7">
+            <li class="feedback-group__item">
+              <label class="feedback-group__label" for="weight">Вес (кг):*</label>
+              <input class="feedback-group__input" type="number" id="weight" name="weight" placeholder="7" required>
             </li>
-            <li class="feedback-qroup__item">
-              <label class="feedback-qroup__label" for="age">Возраст (лет):</label>
-              <input class="feedback-qroup__input" type="number" id="age" name="age" placeholder="7">
+            <li class="feedback-group__item">
+              <label class="feedback-group__label" for="age">Возраст (лет):</label>
+              <input class="feedback-group__input" type="number" id="age" name="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -65,7 +65,7 @@
           <ul class="feedback-diet__list">
             <li class="feedback-diet__item">
               <label class="feedback-diet__label " for="weight-loss">Похудение</label>
-              <input class="feedback-diet__input" type="radio" id="weight-loss" name="weight-loss">
+              <input class="feedback-diet__input" type="radio" id="weight-loss" name="weight-loss" checked>
             </li>
             <li class="feedback-diet__item">
               <label class="feedback-diet__label" for="weight-gain">Набор массы</label>
@@ -83,33 +83,38 @@
           <ul class="feedback-contacts__list contacts-list">
             <li class="contacts-list__item">
               <label class="contacts-list__label" for="email">E-mail:*</label>
-              <input class="contacts-list__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="contacts-list__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="contacts-list__item">
               <label class="contacts-list__label" for="phone">Телефон:*</label>
-              <input class="contacts-list__input" type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+              <input class="contacts-list__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-comment">
           <legend class="feedback-comment__legend">Комментарий</legend>
-          <ul class="feedback-comment__list">
-            <li class="feedback-comment__item">
-              <label class="feedback-comment__label" for="sweetener">сахарозаменитель</label>
-              <input class="feedback-comment__input" type="radio" name="sweetener" id="sweetener" checked>
+          <textarea class="feedback-comment" name="feedback-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="feedback-form__group feedback-additionally">
+          <legend class="feedback-additionally__legend">Дополнительно</legend>
+          <ul class="feedback-additionally__list">
+            <li class="feedback-additionally__item">
+              <label class="feedback-additionally__label" for="sweetener">сахарозаменитель</label>
+              <input class="feedback-additionally__input" type="radio" name="sweetener" id="sweetener" checked>
             </li>
-            <li class="feedback-comment__item">
-              <label class="feedback-comment__label" for="water">питьевая вода</label>
-              <input class="feedback-comment__input" type="radio" name="water" id="water">
+            <li class="feedback-additionally__item">
+              <label class="feedback-additionally__label" for="water">питьевая вода</label>
+              <input class="feedback-additionally__input" type="radio" name="water" id="water">
             </li>
-            <li class="feedback-comment__item">
-              <label class="feedback-comment__label" for="milk">молоко</label>
-              <input class="feedback-comment__input" type="radio" name="milk" id="milk">
+            <li class="feedback-additionally__item">
+              <label class="feedback-additionally__label" for="milk">молоко</label>
+              <input class="feedback-additionally__input" type="radio" name="milk" id="milk">
             </li>
-            <li class="feedback-comment__item">
-              <label class="feedback-comment__label" for="vitamins">витамины</label>
-              <input class="feedback-comment__input" type="radio" name="vitamins" id="vitamins">
+            <li class="feedback-additionally__item">
+              <label class="feedback-additionally__label" for="vitamins">витамины</label>
+              <input class="feedback-additionally__input" type="radio" name="vitamins" id="vitamins">
             </li>
           </ul>
         </fieldset>
