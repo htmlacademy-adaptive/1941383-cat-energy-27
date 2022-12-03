@@ -86,6 +86,22 @@
   color: #000000;
   text-transform: uppercase;
 }
+.copyright__link {
+  text-decoration: none;
+}
+.copyright__text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #444444;
+}
+.copyright__link-logo {
+  text-decoration: none;
+}
+.copyright__logo {
+  fill: #666666;
+}
 .diets {
   background-color: #ffffff;
   margin-bottom: 20px;
@@ -215,6 +231,9 @@
   color: #000000;
   padding: 10px 20px 18px 20px;
 }
+.main-header__logo-link {
+  text-decoration: none;
+}
 .main-nav__list {
   list-style: none;
 }
@@ -340,6 +359,15 @@
   line-height: 18px;
   color: #444444;
 }
+.proofs__cost {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+}
 .social {
   list-style: none;
 }
@@ -380,21 +408,21 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Lato-Regular.woff2") format("woff2");
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
 /*# sourceMappingURL=style.css.map */
