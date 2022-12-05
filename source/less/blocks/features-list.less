@@ -8,19 +8,37 @@
   font-size: 14px;
   line-height: 18px;
 
-  display: grid;
-  grid-template-columns: 279px;
-
-  @media (min-width: @tablet-width) {
-    grid-template-columns: 230px 230px 230px 230px;
-    flex-flow: aito;
-  }
-
-  @media (min-width: @desctop-width) {
-    grid-template-columns: 570px 570px;
-  }
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .features-list__item {
-  grid-column: 1/-1;
+  width: 280px;
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    width: 654px;
+    flex-wrap: wrap;
+    column-gap: 150px;
+    row-gap: 37px;
+  }
+
+  .features-list__item {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-list {
+    width: 1220px;
+    flex-wrap: nowrap;
+    column-gap: 80px;
+  }
+
+  .features-list__item {
+    min-width: 250px;
+  }
 }
