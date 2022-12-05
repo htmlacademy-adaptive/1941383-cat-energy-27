@@ -10,31 +10,39 @@
 
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__menu">
+        <a class="main-header__logo-cat" href="#">
+          <img src="./img/cat-logo-mobile.png" width="33" height="37" alt="Логотип кота.">
+        </a>
 
-    <a class="main-header__logo-link" href="#">
-      <img src="./img/cat-logo-mobile.png" width="33" height="37" alt="Логотип кота.">
-    </a>
-    <a class="main-header__logo-link" href="#">
-      <img src="./img/logo-cat-energy.png" width="101" height="18" alt="Cat-energy.">
-    </a>
+        <a class="main-header__logo-text" href="">
+          <img src="./img/logo-cat-energy.png" width="101" height="18" alt="Cat-energy.">
+        </a>
 
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню навигации.</span>
-    </button>
+        <a class="main-header__big-logo" href="#">
+          <img class="main-header__logo-desktop" src="./img/big-logo-header.png" width="174" height="52" alt="Логотип Cat-energy">
+        </a>
 
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню навигации.</span>
+        </button>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" htef="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="catalog">
@@ -210,7 +218,7 @@
         <p class="additional-promo__description">Закажите все и получите чехол для кота в подарок!</p>
       </article>
     </section>
-    <section class="contacts contacts--catalog">
+    <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -218,12 +226,11 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__contacts footer-contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <a class="footer-contacts__logo-link" href="#">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo-link" href="#">
         <img src="./img/logo-cat-energy.png" width="101" height="18" alt="Cat-energy.">
       </a>
-      <ul class="footer-contacts__social social">
+      <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы Вконтакте</a>
         </li>
@@ -246,6 +253,6 @@
           </svg>
         </a>
       </div>
-    </section>
+    </div>
   </footer>
 </body>

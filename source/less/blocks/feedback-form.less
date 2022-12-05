@@ -1,1 +1,26 @@
-//пока пусто
+.feedback-form__wrapper-group {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form__wrapper-group {
+    width: 708px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .feedback-form__group {
+    width: 630px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form__wrapper-group {
+    width: 1220px;
+    flex-direction: row;
+  }
+}
