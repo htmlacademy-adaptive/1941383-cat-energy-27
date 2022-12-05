@@ -1,8 +1,26 @@
 .features-list {
   list-style: none;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: @special_dark-grey;
+
+  .lato-12-16;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+
+  display: grid;
+  grid-template-columns: 279px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 230px 230px 230px 230px;
+    flex-flow: aito;
+  }
+
+  @media (min-width: @desctop-width) {
+    grid-template-columns: 570px 570px;
+  }
+}
+
+.features-list__item {
+  grid-column: 1/-1;
 }
