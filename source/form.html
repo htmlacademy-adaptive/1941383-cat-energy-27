@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <!-- <header class="main-header">
+  <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__menu">
           <a class="main-header__logo-cat" href="#">
@@ -43,7 +43,7 @@
           </ul>
         </nav>
       </div>
-    </header> -->
+    </header>
 
   <main class="form-main">
     <div class="form-main__wrapper">
@@ -90,9 +90,9 @@
             </fieldset>
           </div>
 
-          <fieldset class="feedback-form__group feedback-contacts">
+        <fieldset class="feedback-form__group feedback-contacts">
             <legend class="feedback-contacts__legend">Контактные данные (владельца кота)</legend>
-            <ul class="feedback-contacts__list contacts-list">
+            <ul class="feedback-form__wrapper-group feedback-contacts__list contacts-list">
               <li class="contacts-list__item">
                 <label class="contacts-list__label" for="email">E-mail:*</label>
                 <input class="contacts-list__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -103,15 +103,16 @@
               </li>
             </ul>
           </fieldset>
-
-          <fieldset class="feedback-form__group feedback-comment">
+          <div class="feedback-form__group">
+          <fieldset class="feedback-comment">
             <legend class="feedback-comment__legend">Комментарий</legend>
             <textarea class="feedback-comment__textarea" name="feedback-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-
-          <fieldset class="feedback-form__group feedback-additionally">
+        </div>
+        <div class="feedback-form__group">
+          <fieldset class="feedback-additionally">
             <legend class="feedback-additionally__legend">Дополнительно</legend>
-            <ul class="feedback-additionally__list">
+            <ul class="-comments">
               <li class="feedback-additionally__item">
                 <label class="feedback-additionally__label" for="sweetener">сахарозаменитель</label>
                 <input class="feedback-additionally__input" type="radio" name="sweetener" id="sweetener" checked>
@@ -130,6 +131,7 @@
               </li>
             </ul>
           </fieldset>
+        </div>
 
           <button class="feedback-form__submit" type="submit">отправить заявку</button>
           <span class="feedback-form__footnote">* — Обязательные поля</span>
