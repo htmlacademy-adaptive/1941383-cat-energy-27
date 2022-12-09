@@ -1,14 +1,37 @@
 .form-main {
-  .osw-16-18;
+  .small-text;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form-main__wrapper {
+  width: 320px;
+  margin: auto;
 }
 
 .form-main__title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-main__description {
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

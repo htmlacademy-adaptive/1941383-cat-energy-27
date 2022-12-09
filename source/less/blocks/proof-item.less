@@ -1,12 +1,20 @@
 .proof-item__description {
-  font-family: "Oswald", sans-serif;
+  .medium-text;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .proof-item__title {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
+  .small-text-2;
   line-height: 12px;
-  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

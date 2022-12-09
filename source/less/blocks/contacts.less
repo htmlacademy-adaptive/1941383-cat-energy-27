@@ -2,23 +2,40 @@
   background-color: #ffffff;
   font-weight: 400;
   padding: 26px 20px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+  }
 }
 
 .contacts__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  .small-text;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__description {
-  font-family: "Lato", sans-serif;
+  .lato-12-16;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    list-style: 20px;
+  }
 }
 
 .contacts--catalog {
-  background-color: #f2f2f2;
+  background-color: @basic-color;
 }

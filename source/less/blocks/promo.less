@@ -1,21 +1,43 @@
 .promo {
-  color: #ffffff;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
+  .small-text;
+  color: @main-color-2;
   margin-bottom: 20px;
-  background-color: rgba(104, 183, 56, 0.85);
+  width: 320px;
+
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    background-color: @main-color-2;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+  }
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  width: 250px;
+
+  @media (min-width: @tablet-width) {
+    width: 420px;
+    .big-text;
+  }
 }
 
 .promo__description {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  width: 198px;
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
 }
 
 .promo__button {
@@ -23,6 +45,6 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #68b738;
+  color: @main-color-2;
+  background-color: @basic_green;
 }

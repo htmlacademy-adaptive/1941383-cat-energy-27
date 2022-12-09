@@ -1,8 +1,40 @@
 .features-list {
   list-style: none;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: @special_dark-grey;
+
+  .lato-12-16;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: 654px;
+    flex-wrap: wrap;
+    column-gap: 150px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    flex-wrap: nowrap;
+    column-gap: 80px;
+  }
+}
+
+.features-list__item {
+  width: 280px;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    max-width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 250px;
+  }
 }

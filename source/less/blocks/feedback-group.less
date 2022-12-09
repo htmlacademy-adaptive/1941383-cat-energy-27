@@ -1,9 +1,24 @@
 .feedback-group {
-  .osw-16-18;
-  color: #444444;
+  .small-text;
+  color: @secondary-color;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.feedback-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .feedback-group__input {
-  .osw-16-18;
-  color: #444444;
+  .small-text;
+  color: @secondary-color;
 }

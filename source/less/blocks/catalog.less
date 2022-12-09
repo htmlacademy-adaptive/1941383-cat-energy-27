@@ -1,11 +1,25 @@
 .catalog {
-  background-color: #ffffff;
+  background-color: @main-color-2;
   padding: 0 20px;
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
+  .medium-text;
+}
+
+.catalog__wrapper {
+  margin: 0 auto;
+}
+
+.catalog__main-products-wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

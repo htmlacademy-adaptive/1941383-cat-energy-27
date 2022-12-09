@@ -1,1 +1,46 @@
-//пока пусто
+.feedback-form {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.feedback-form fieldset {
+  box-sizing: border-box;
+}
+
+.feedback-form__wrapper-group {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+  }
+}
+
+.feedback-form__group {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}

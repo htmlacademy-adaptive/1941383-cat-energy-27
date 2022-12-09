@@ -1,5 +1,17 @@
-.feedback-comments {
-  .osw-16-18;
+.feedback-comment {
+  .small-text;
+
+  @media (min-width: @mobile-width-only) {
+    width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .feedback-comment__legend {
@@ -8,7 +20,7 @@
 }
 
 .feedback-comment__textarea {
-  .osw-16-18;
-  color: #444444;
+  .small-text;
+  color: @secondary-color;
   text-transform: uppercase;
 }
