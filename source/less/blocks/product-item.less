@@ -1,29 +1,25 @@
 .product-item {
-  background-color: #ffffff;
+  background-color: @main-color-2;
   font-weight: 400;
 }
 
 .product-item__title-link {
   text-decoration: none;
-  color: #222222;
+  color: @secondary-color-2;
 }
 
 .product-item__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  .small-text;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .product-item__description {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
+  .small-text-2;
+  color: @secondary-color;
 }
 
 .product-item__button.product-item__button--show-more {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: @secondary-color;
+  background-color: @basic-color;
 }
