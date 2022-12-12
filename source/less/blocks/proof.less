@@ -2,10 +2,23 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    gap: 42px;
+    grid-template-columns: 162px 162px;
+    column-gap: 42px;
   }
 }
+
+.proof-item__stats {
+  text-align: center;
+}
+
+.proof-item__description {
+  margin: 0;
+}
+
+

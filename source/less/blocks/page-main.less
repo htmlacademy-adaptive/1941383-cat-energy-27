@@ -1,15 +1,39 @@
 .page-main__promo {
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    width: 708px;
+    width: 768px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+.page-main__container {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1440px;
   }
 }

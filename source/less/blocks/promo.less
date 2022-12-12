@@ -1,16 +1,65 @@
 .promo {
   .small-text;
   color: @main-color-2;
-  margin-bottom: 20px;
   width: 320px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: grid;
+    grid-template-columns: 708px;
+    background-color: @main-color-2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    grid-template-columns: 570px 720px;
+    gap: 40px;
+    padding-bottom: 185px;
+  }
+}
+
+.promo__image-container {
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+  top: 0;
 
 
   @media (min-width: @tablet-width) {
     position: relative;
-    background-color: @main-color-2;
-    display: flex;
-    flex-direction: column;
-    width: 420px;
+    width: 709px;
+    height: 609px;
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -59px;
+    right: 0;
+    grid-column: 2/-1;
+    width: 720px;
+    background: rgba(104, 183, 56, 0.85);
+  }
+}
+
+.promo__image {
+  position: absolute;
+  bottom: -135px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 141px;
+    right: 330px;
+    grid-column: 2/-1;
+    width: 552px;
   }
 }
 
@@ -18,11 +67,17 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  width: 250px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     width: 420px;
     .big-text;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
   }
 }
 
@@ -30,13 +85,21 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  width: 198px;
+  padding-bottom: 302px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     width: 285px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
   }
 }
 
@@ -46,5 +109,20 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @main-color-2;
-  background-color: @basic_green;
+  background-color: @main-color;
+  padding: 7px 44px;
+  text-align: center;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    grid-column: 1/2;
+  }
 }
