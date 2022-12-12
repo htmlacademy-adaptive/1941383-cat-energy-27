@@ -1,12 +1,36 @@
 .proof-item {
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 162px;
+      height: 72px;
+    }
+  }
+}
+
+.proof-item__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .proof-item__description {
   .medium-text;
   font-size: 24px;
   line-height: 24px;
+  margin-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -17,9 +41,19 @@
 .proof-item__title {
   .small-text-2;
   line-height: 12px;
+  background-color: #eaeaea;
+  width: 87px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #f2f2f2;
   }
 }
