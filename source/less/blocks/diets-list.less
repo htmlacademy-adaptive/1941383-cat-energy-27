@@ -35,8 +35,20 @@
 
     width: 50px;
     height: 53px;
+    background: no-repeat center url("/img/slim-cat-icon.svg");
+    background-size: contain;
+    z-index: 1;
+  }
 
-    background: no-repeat center url("/img/cat-black-icon.svg");
+  &::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
   }
 
   @media (min-width: @tablet-width) {
@@ -44,15 +56,24 @@
     padding: 77px 316px 57px 53px;
 
     &::before {
-      top: 61px;
+      top: 81px;
       left: auto;
-      right: 0;
-
-      width: 268px;
-      height: 200px;
+      right: 92px;
+      width: 140px;
+      height: 194px;
 
       background: no-repeat center url("/img/cat-black-icon.svg");
       background-size: contain;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: auto;
+      top: 92px;
+      right: 62px;
+      width: 200px;
+      height: 200px;
     }
   }
 
@@ -62,13 +83,50 @@
 
     &::before {
       top: 41px;
-      left: 52px;
+      left: 67px;
 
-      width: 100px;
-      height: 106px;
+      width: 70px;
+      height: 97px;
 
       background: no-repeat center url("/img/cat-black-icon.svg");
       background-size: contain;
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
+  }
+}
+
+.diets-list__item--2 {
+  &::before {
+    background-image: url("/img/icon_pantera.svg");
+    width: 67px;
+    height: 28px;
+    top: 35px;
+    left: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      left: auto;
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      right: 28px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 134px;
+      height: 56px;
+
+      top: 67px;
+      left: 33px;
     }
   }
 }
