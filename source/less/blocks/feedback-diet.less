@@ -2,19 +2,39 @@
   .small-text;
   color: @secondary-color-2;
   text-transform: uppercase;
-  width: 320px;
+  padding: 0;
+  border: 1px solid #e7e7e7;
+  align-self: stretch;
+  display: flex;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    grid-column: 2/-1;
   }
 }
 
 .feedback-diet__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 20px 30px 20px;
+
+
+  @media (min-width: @desktop-width) {
+    gap: 23px;
+  }
+}
+
+.feedback-diet__input {
+  order: 1;
+}
+
+.feedback-diet__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }

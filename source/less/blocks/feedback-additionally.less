@@ -1,9 +1,10 @@
 .feedback-additionally {
   .small-text;
+  border: none;
+  width: 280px;
+  margin: 0 auto;
 
-  @media (min-width: @mobile-width-only) {
-    width: 320px;
-  }
+  outline: 1px solid red;
 
   @media (min-width: @tablet-width) {
     width: 630px;
@@ -17,21 +18,47 @@
 .feedback-additionally__legend {
   font-size: 24px;
   line-height: 26px;
+  padding-bottom: 57px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
-.feedback-additionally__list {
+.feedback-additionally__comments-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, auto);
+    row-gap: 32px;
+    column-gap: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, auto);
+    row-gap: 0;
+    column-gap: auto;
+  }
+}
+
+.feedback-additionally__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .feedback-additionally__label {
   text-transform: uppercase;
 }
 
-.feedback-form__submit {
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: @main-color;
-  color: @main-color-2;
-}
+

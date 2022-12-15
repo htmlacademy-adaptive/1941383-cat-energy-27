@@ -1,19 +1,41 @@
 .form-main {
   .small-text;
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.form-main label,
+.form-main input {
+  @media (min-width: @tablet-width) {
+    .small-text;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+.form-main__wrapper {
+  width: 280px;
   padding: 0 20px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 630px;
+    padding: 0 69px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    padding: 0 110px;
   }
-}
 
-.form-main__wrapper {
-  width: 320px;
-  margin: auto;
 }
 
 .form-main__title {

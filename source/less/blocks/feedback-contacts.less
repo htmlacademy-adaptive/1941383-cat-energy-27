@@ -1,13 +1,19 @@
 .feedback-contacts {
   .small-text;
   color: @secondary-color;
-  padding: 0;
   margin: 0;
   width: 320px;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  border: none;
+  padding: 0 20px;
+
+  @media (min-width: @mobile-width-only) {
+
+  }
 
   @media (min-width: @tablet-width) {
     width: 630px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,4 +24,17 @@
 .feedback-contacts__legend {
   font-size: 24px;
   line-height: 26px;
+  padding-right: 97px;
+  padding-bottom: 35px;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
