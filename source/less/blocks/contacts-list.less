@@ -9,14 +9,36 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: center;
+    right: 15px;
+
+    background: url("/img/icon__email.svg") no-repeat center;
+  }
 
   @media (min-width: @tablet-width) {
     gap: 20px;
+
+    &::after {
+      right: 18px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     gap: 80px;
     flex-direction: row;
+  }
+}
+
+.contacts-list__item--phone {
+  &::after {
+    background-image: url("/img/icon_phone.svg")
   }
 }
 
