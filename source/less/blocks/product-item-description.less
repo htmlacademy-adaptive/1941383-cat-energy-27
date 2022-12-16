@@ -1,6 +1,7 @@
 .product-item-description {
   .small-text-2;
   color: @secondary-color;
+  width: 100%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -11,8 +12,7 @@
   }
 }
 
-.product-item-description dd {
-  @media (min-width: @tablet-width) {
-    text-align: right;
-  }
+.product-item-description__value {
+  text-align: right;
+  margin: 0;
 }

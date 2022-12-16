@@ -7,6 +7,8 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -74,12 +76,12 @@
   text-transform: uppercase;
   background-color: @main-color;
   color: @main-color-2;
-  padding: 7px;
+  padding: 7px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 13px;
     line-height: 0;
     font-size: 20px;
+    padding: 13px 0;
   }
 }
 
