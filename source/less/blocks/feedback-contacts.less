@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: none;
   padding: 0 20px;
+  position: relative;
 
   @media (min-width: @mobile-width-only) {
 
@@ -28,6 +29,16 @@
   margin-bottom: 35px;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -35,7 +46,7 @@
     height: 2px;
     width: 100%;
     background-color: #68b738;
-    z-index: -1;
+
   }
 
   @media (min-width: @tablet-width) {
