@@ -1,19 +1,11 @@
 .feedback-form {
-  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: 630px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 
-.feedback-form fieldset {
-  box-sizing: border-box;
+  }
 }
 
 .feedback-form__wrapper-group {
@@ -40,10 +32,19 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 638px;
+    margin: 0 auto;
+    gap: 72px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1220px;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 0 110px;
+    margin: 0 auto;
   }
 }
 
@@ -79,7 +80,7 @@
   padding: 7px 0;
 
   @media (min-width: @tablet-width) {
-    line-height: 0;
+    line-height: 26px;
     font-size: 20px;
     padding: 13px 0;
   }

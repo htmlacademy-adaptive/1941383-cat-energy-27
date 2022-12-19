@@ -2,23 +2,17 @@
   .small-text;
   color: @secondary-color;
   margin: 0;
-  width: 320px;
-  box-sizing: border-box;
+  padding: 0;
   border: none;
-  padding: 0 20px;
   position: relative;
 
   @media (min-width: @mobile-width-only) {
-
   }
 
   @media (min-width: @tablet-width) {
-    width: 630px;
-    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
   }
 }
 
@@ -29,16 +23,16 @@
   margin-bottom: 35px;
   position: relative;
 
-  &::before {
+  /* &::before {
     content: "";
     position: absolute;
     top: 50%;
     height: 2px;
     width: 100%;
-    background-color: #68b738;
+    background-color: #68b738; */
 
-  }
-
+  /* } */
+/*
   &::after {
     content: "";
     position: absolute;
@@ -47,7 +41,7 @@
     width: 100%;
     background-color: #68b738;
 
-  }
+  } */
 
   @media (min-width: @tablet-width) {
     font-size: 36px;

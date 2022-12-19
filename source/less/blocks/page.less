@@ -5,7 +5,26 @@
 
 .page__body {
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   background-color: @main-color-2;
   color: #000000;
+}
+
+
+.page__center-container {
+  margin: 0 auto;
+  width: 280px;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
