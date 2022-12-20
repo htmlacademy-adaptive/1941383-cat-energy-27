@@ -12,14 +12,16 @@
 .feedback-additionally__legend {
   font-size: 24px;
   line-height: 26px;
-  padding-bottom: 57px;
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 57px;
   }
 }
 
@@ -53,4 +55,39 @@
 
 .feedback-additionally__label {
   text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-left: 36px;
 }
+
+.feedback-additionally__control {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 2px;
+  border: 1px solid #cdcdcd;
+}
+
+/* .feedback-additionally__control::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+} */
+
+.feedback-additionally__input[type="radio"]:checked + .feedback-additionally__control::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: url(/img/check_icon.svg) no-repeat center;
+}
+

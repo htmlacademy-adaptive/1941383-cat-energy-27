@@ -76,16 +76,23 @@
           <fieldset class="feedback-diet">
             <ul class="feedback-diet__list form-container-second">
               <li class="feedback-diet__item">
-                <label class="feedback-diet__label " for="weight-loss">Похудение</label>
-                <input class="feedback-diet__input" type="radio" id="weight-loss" name="weight-loss" checked>
+                <label class="feedback-diet__label " for="weight-loss">
+                  <input class="feedback-diet__input visually-hidden" type="radio" id="weight-loss" name="feedback-diet-option" checked>
+                  <span class="feedback-diet__control"></span>
+                  <span class="feedback-fiet__control-label">Похудение</span>
+                </label>
               </li>
               <li class="feedback-diet__item">
-                <label class="feedback-diet__label" for="weight-gain">Набор массы</label>
-                <input class="feedback-diet__input" type="radio" id="weight-gain" name="weight-gain">
+                <label class="feedback-diet__label" for="weight-gain">Набор массы
+                  <input class="feedback-diet__input visually-hidden" type="radio" id="weight-gain" name="feedback-diet-option">
+                  <span class="feedback-diet__control"></span>
+                </label>
               </li>
               <li class="feedback-diet__item">
-                <label class="feedback-diet__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-                <input class="feedback-diet__input" type="radio" id="need-advice" name="need-advice">
+                <label class="feedback-diet__label" for="need-advice">Не знаю (нужен ваш совет)
+                  <input class="feedback-diet__input visually-hidden" type="radio" id="need-advice" name="feedback-diet-option">
+                  <span class="feedback-diet__control"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -93,9 +100,13 @@
 
 
         <fieldset class=" feedback-contacts">
-          <div class="form-container">
-            <legend class="feedback-contacts__legend">Контактные данные (владельца кота)</legend>
+          <div class="page__line">
+            <div class="form-container">
+              <span class="feedback-contacts__legend">Контактные данные (владельца кота)</span>
+            </div>
+          </div>
 
+          <div class="form-container">
             <ul class="feedback-form__wrapper-group feedback-contacts__list contacts-list">
               <li class="contacts-list__item">
                 <label class="contacts-list__label" for="email">E-mail:*</label>
@@ -111,32 +122,53 @@
 
 
         <fieldset class="feedback-comment">
+          <div class="page__line">
+            <div class="form-container">
+              <span class="feedback-comment__legend ">Комментарий</span>
+            </div>
+          </div>
+          </div>
           <div class="form-container">
-            <legend class="feedback-comment__legend">Комментарий</legend>
             <textarea class="feedback-comment__textarea" name="feedback-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
 
         <fieldset class="feedback-additionally">
+          <div class="page__line">
+            <div class="form-container">
+              <span class="feedback-additionally__legend">Дополнительно</span>
+            </div>
+          </div>
           <div class="form-container">
-            <legend class="feedback-additionally__legend">Дополнительно</legend>
             <ul class="feedback-additionally__comments-list">
               <li class="feedback-additionally__item">
-                <label class="feedback-additionally__label" for="sweetener">сахарозаменитель</label>
-                <input class="feedback-additionally__input" type="radio" name="sweetener" id="sweetener" checked>
+                <label class="feedback-additionally__label" for="sweetener">сахарозаменитель
+                  <input class="feedback-additionally__input visually-hidden" type="radio" name="options" id="sweetener" value="sweetener" checked>
+                  <span class="feedback-additionally__control"></span>
+                </label>
+
               </li>
               <li class="feedback-additionally__item">
-                <label class="feedback-additionally__label" for="water">питьевая вода</label>
-                <input class="feedback-additionally__input" type="radio" name="water" id="water">
+                <label class="feedback-additionally__label" for="water">питьевая вода
+                  <input class="feedback-additionally__input visually-hidden" type="radio" name="options" id="water" value="water">
+                  <span class="feedback-additionally__control"></span>
+                </label>
+
               </li>
               <li class="feedback-additionally__item">
-                <label class="feedback-additionally__label" for="milk">молоко</label>
-                <input class="feedback-additionally__input" type="radio" name="milk" id="milk">
+                <label class="feedback-additionally__label" for="milk">молоко
+                  <input class="feedback-additionally__input visually-hidden" type="radio" name="options" id="milk" value="milk">
+                  <span class="feedback-additionally__control"></span>
+                </label>
+
               </li>
               <li class="feedback-additionally__item">
-                <label class="feedback-additionally__label" for="vitamins">витамины</label>
-                <input class="feedback-additionally__input" type="radio" name="vitamins" id="vitamins">
+                <label class="feedback-additionally__label" for="vitamins">витамины
+                  <input class="feedback-additionally__input visually-hidden" type="radio" name="options" id="vitamins" value="vitamins">
+                  <span class="feedback-additionally__control"></span>
+                </label>
+
               </li>
             </ul>
           </div>

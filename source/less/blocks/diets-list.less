@@ -179,6 +179,22 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background: url(/img/arrow__catalog.svg) no-repeat center;
+    background-size: cover;
+    right: -50%;
+    top: 25%;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

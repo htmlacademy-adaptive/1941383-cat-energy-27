@@ -7,14 +7,25 @@
   .small-text;
   font-size: 24px;
   line-height: 24px;
+  background: #ffffff;
+  position: relative;
+  display: inline-block;
 }
 
 .additioinal-products__wrapper {
+  display: grid;
+  justify-items: center;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-items: stretch;
+    padding: 0 30px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: grid;
     gap: 80px;
     grid-template-columns: 3fr 245px;
+    padding: 0 110px;
   }
 
 }

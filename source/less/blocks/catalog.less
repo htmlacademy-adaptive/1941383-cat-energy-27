@@ -1,10 +1,20 @@
 .catalog {
   background-color: @main-color-2;
-  padding: 0 20px;
 }
 
 .catalog__title {
   .medium-text;
+  padding: 27px 0 41px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 0 163px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .catalog__wrapper {
@@ -12,14 +22,12 @@
 }
 
 .catalog__main-products-wrapper {
-  width: 320px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 707px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+
   }
 }
