@@ -83,7 +83,11 @@
 
 } */
 
-.feedback-additionally__input[type="radio"]:checked + .feedback-additionally__control::after {
+.feedback-additionally__input:disabled {
+
+}
+
+.feedback-additionally__input[type="checkbox"]:checked + .feedback-additionally__control::after {
   content: "";
   position: absolute;
   width: 13px;

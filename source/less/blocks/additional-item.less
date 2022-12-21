@@ -61,6 +61,15 @@
   text-transform: uppercase;
   background-color: @main-color;
   padding: 10px 0;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
