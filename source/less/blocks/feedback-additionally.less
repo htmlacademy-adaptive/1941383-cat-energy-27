@@ -1,12 +1,6 @@
 .feedback-additionally {
   .small-text;
   border: none;
-
-  @media (min-width: @tablet-width) {
-  }
-
-  @media (min-width: @desktop-width) {
-  }
 }
 
 .feedback-additionally__legend {
@@ -20,9 +14,6 @@
     font-size: 36px;
     line-height: 36px;
   }
-
-  @media (min-width: @desktop-width) {
-  }
 }
 
 .feedback-additionally__comments-list {
@@ -32,7 +23,6 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 12px;
-
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -73,25 +63,10 @@
   border: 1px solid #cdcdcd;
 }
 
-/* .feedback-additionally__control::after {
-  content: "";
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  background-color: #68b738;
-  border-radius: 50%;
-
-} */
-
-.feedback-additionally__input:disabled {
-
-}
-
 .feedback-additionally__input[type="checkbox"]:checked + .feedback-additionally__control::after {
   content: "";
   position: absolute;
   width: 13px;
   height: 13px;
-  background: url(/img/check_icon.svg) no-repeat center;
+  background: url("/img/check_icon.svg") no-repeat center;
 }
-
