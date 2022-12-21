@@ -68,6 +68,7 @@
 
 .main-header__logo-text {
   display: block;
+
   &:hover {
     opacity: 80%;
   }
@@ -92,5 +93,23 @@
   @media (min-width: @desktop-width) {
     display: block;
     height: 59px;
+  }
+}
+
+.main-nav--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
+}
+
+.main-header__menu.main-nav--nojs {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
