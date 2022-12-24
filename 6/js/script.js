@@ -4,7 +4,7 @@ let mainNav = document.querySelector('.main-nav');
 
 mainHeaderMenu.classList.remove('main-nav--nojs');
 
-mainHeaderToggle.addEventListener('click', function () {
+mainHeaderToggle.addEventListener('click',  function() {
   if (mainNav.classList.contains('main-nav--closed')) {
     mainNav.classList.remove('main-nav--closed');
     mainNav.classList.add('main-nav--opened');
