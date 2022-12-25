@@ -9,3 +9,41 @@
   background-color: @main-color-2;
   color: #000000;
 }
+
+
+.page__center-container {
+  margin: 0 auto;
+  width: 280px;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+.page__line {
+  position: relative;
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+}

@@ -1,21 +1,22 @@
 .feedback-contacts {
   .small-text;
   color: @secondary-color;
-  padding: 0;
   margin: 0;
-  width: 320px;
-  box-sizing: content-box;
-
-  @media (min-width: @tablet-width) {
-    width: 630px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-  }
+  padding: 0;
+  border: none;
 }
 
 .feedback-contacts__legend {
   font-size: 24px;
   line-height: 26px;
+
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

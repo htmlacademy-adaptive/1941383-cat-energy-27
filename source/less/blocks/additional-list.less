@@ -2,9 +2,32 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-bottom: 25px;
+    gap: 54px;
+
+    &::before {
+      border: 2px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 0;
+
+    &::before {
+      border-left: none;
+      border-right: none;
+    }
   }
 }

@@ -1,0 +1,20 @@
+.page-body {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/promo_desktop.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0;
+      right: 0;
+      background-size: cover;
+      height: 694px;
+      width: 50%;
+      z-index: 1;
+      background-color: rgba(104, 183, 56, 0.85);
+    }
+  }
+}

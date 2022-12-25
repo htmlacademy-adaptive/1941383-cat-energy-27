@@ -1,12 +1,18 @@
 .product-item-description {
   .small-text-2;
   color: @secondary-color;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    width: 100%;
+  }
 }
 
-.product-item__button {
-  .small-text;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: @main-color;
-  color: @main-color-2;
+.product-item-description__value {
+  text-align: right;
+  margin: 0;
 }

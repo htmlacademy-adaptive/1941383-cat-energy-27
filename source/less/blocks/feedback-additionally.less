@@ -1,37 +1,72 @@
 .feedback-additionally {
   .small-text;
-
-  @media (min-width: @mobile-width-only) {
-    width: 320px;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 630px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-  }
+  border: none;
 }
 
 .feedback-additionally__legend {
   font-size: 24px;
   line-height: 26px;
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.feedback-additionally__list {
+.feedback-additionally__comments-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0;
+    column-gap: 125px;
+  }
+}
+
+.feedback-additionally__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .feedback-additionally__label {
   text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-left: 36px;
 }
 
-.feedback-form__submit {
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: @main-color;
-  color: @main-color-2;
+.feedback-additionally__control {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 2px;
+  border: 1px solid #cdcdcd;
+}
+
+.feedback-additionally__input[type="checkbox"]:checked + .feedback-additionally__control::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: url("/img/check_icon.svg") no-repeat center;
 }

@@ -2,21 +2,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  color: @special_dark-grey;
-
-  .lato-12-16;
+  color: @secondary-color-2;
+  .small-text-2;
   font-size: 14px;
   line-height: 18px;
-
-  width: 280px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 80px;
+  position: relative;
+  row-gap: 20px;
 
   @media (min-width: @tablet-width) {
     width: 654px;
     flex-wrap: wrap;
     column-gap: 150px;
     row-gap: 37px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,14 +28,84 @@
 }
 
 .features-list__item {
-  width: 280px;
   display: flex;
+  position: relative;
+  padding-top: 40px;
 
-  @media (min-width: @tablet-width) {
-    max-width: 250px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -80px;
+    background-color: @main-color;
+    background-image: url("/img/icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  @media (min-width: @desktop-width) {
-    min-width: 250px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    background-image: url("/img/1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.features-list__item-1 {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/1.png");
+  }
+}
+
+.features-list__item-2 {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/2.png");
+  }
+}
+
+.features-list__item-3 {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/3.png");
+  }
+}
+
+.features-list__item-4 {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/4.png");
+  }
+}
+
+.features-list__item-2::before {
+  background-image: url("/img/icon_bubbles.svg");
+}
+
+.features-list__item-3::before {
+  background-image: url("/img/icon_eat.svg");
+}
+
+.features-list__item-4::before {
+  background-image: url("/img/icon_time.svg");
+}
+
+.features-list__description {
+  .small-text-2;
+  font-size: 14px;
+  line-height: 18px;
+  color: @secondary-color;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 151px;
   }
 }

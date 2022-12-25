@@ -4,4 +4,17 @@
   font-size: 14px;
   line-height: 14px;
   color: @secondary-color;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+    justify-self: end;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
