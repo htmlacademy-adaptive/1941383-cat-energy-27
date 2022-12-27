@@ -17,18 +17,15 @@
     <div class="main-header__wrapper">
       <div class="main-header__menu center-container main-nav--nojs">
         <a class="main-header__logo-cat" href="index.html">
-          <img src="./img/cat-logo-mobile.png" width="33" height="37" alt="Логотип кота.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="main-header__logo-mobile" src="./img/cat-logo-mobile.png" width="33" height="37" alt="Логотип кота.">
+          </picture>
         </a>
 
         <a class="main-header__logo-text" href="index.html">
           <img src="./img/logo-cat-energy.png" width="101" height="18" alt="Cat-energy.">
-        </a>
-
-        <a class="main-header__big-logo" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-            <img class="main-header__logo-desktop" src="./img/logo-tablet.svg" width="174" height="52" alt="Логотип Cat-energy">
-          </picture>
         </a>
 
         <nav class="main-nav main-nav--opened">
