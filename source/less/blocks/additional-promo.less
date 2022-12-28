@@ -5,10 +5,17 @@
   padding-bottom: 43px;
   width: 280px;
   position: relative;
-  background-image: url("/img/cat-in-bag.png");
+  background-image: url("/img/cat-in-bag-mobile@1x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/cat-in-bag-mobile@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &::after {
     content: "";
@@ -36,6 +43,12 @@
     padding-bottom: 71px;
     justify-content: flex-end;
 
+    background-image: url("/img/cat-in-bag-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/cat-in-bag-tablet@2x.png");
+    }
+
     &::before {
       left: 77px;
     }
@@ -44,6 +57,12 @@
   @media (min-width: @desktop-width) {
     justify-content: center;
     margin: 0;
+
+    background-image: url("/img/cat-in-bag-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/cat-in-bag-desktop@2x.png");
+    }
 
     &::before {
       top: 56px;

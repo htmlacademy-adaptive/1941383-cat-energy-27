@@ -5,16 +5,23 @@
     &::before {
       content: "";
       position: absolute;
-      background: url("../img/promo_desktop.png");
+      background: url("../img/promo_desktop@1x.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
       top: 0;
       right: 0;
-      background-size: cover;
       height: 694px;
       width: 50%;
       z-index: 1;
       background-color: rgba(104, 183, 56, 0.85);
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/promo_desktop@2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 }
