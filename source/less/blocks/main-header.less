@@ -59,9 +59,15 @@
   &:active {
     opacity: 60%;
   }
+}
 
-  @media (min-width: @mobile-width-only) {
-    display: none;
+.main-header__logo-mobile {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
   }
 }
 
@@ -78,20 +84,6 @@
 
   @media (min-width: @mobile-width-only) {
     display: none;
-  }
-}
-
-.main-header__big-logo {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    height: 52px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    height: 59px;
   }
 }
 

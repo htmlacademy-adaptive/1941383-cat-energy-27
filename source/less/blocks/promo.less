@@ -8,13 +8,20 @@
   &::before {
     content: "";
     position: absolute;
-    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85), 60%, rgba(104, 183, 56, 0.85) 100%), url("/img/index-background-mobile.png");
+    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85), 60%, rgba(104, 183, 56, 0.85) 100%), url("/img/index-background-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     height: 300px;
     width: 100%;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(180deg, rgba(104, 183, 56, 0.85), 60%, rgba(104, 183, 56, 0.85) 100%), url("/img/index-background-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -124,6 +131,7 @@
     font-size: 20px;
     line-height: 20px;
     padding: 14px 26px;
+    grid-row: 3;
   }
 
   @media (min-width: @desktop-width) {
