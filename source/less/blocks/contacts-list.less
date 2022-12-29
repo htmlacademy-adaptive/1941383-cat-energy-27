@@ -10,23 +10,8 @@
   gap: 10px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: center;
-    right: 15px;
-
-    background: url("/img/icon__email.svg") no-repeat center;
-  }
-
   @media (min-width: @tablet-width) {
     gap: 20px;
-
-    &::after {
-      right: 18px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -35,10 +20,22 @@
   }
 }
 
+.contacts-list__icon-email {
+  color: #222222;
+  position: absolute;
+  right: 20px;
+}
+
 .contacts-list__item--phone {
   &::after {
     background-image: url("/img/icon_phone.svg");
   }
+}
+
+.contacts-list__label {
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 .contacts-list__input {
