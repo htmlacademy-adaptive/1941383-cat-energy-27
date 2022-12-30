@@ -43,12 +43,27 @@
   text-transform: uppercase;
   flex-grow: 1;
   padding: 14px 52px 13px 15px;
+  border: none;
+  outline: 1px solid #e7e7e7;
 
   &:hover {
-    border-color: #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus-visible {
     outline: 2px solid #444444;
+  }
+}
+
+.contacts-list__input:focus-visible + .contacts-list__icon-email {
+  color: #68b738;
+}
+
+.error {
+  outline: 2px solid #ff8282;
+  border: none;
+
+  & + .contacts-list__icon-email {
+    color: #ff8282;
   }
 }
