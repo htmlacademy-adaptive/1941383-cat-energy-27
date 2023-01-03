@@ -25,13 +25,16 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+
     &::before {
       display: none;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 300px;
+    padding-bottom: 270px;
+    padding-top: 58px;
   }
 }
 
@@ -42,6 +45,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
+    padding-left: 92px;
   }
 }
 
@@ -57,8 +61,8 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 141px;
-    right: 310px;
+    top: 106px;
+    right: 331px;
     grid-column: 2/-1;
     width: 552px;
   }

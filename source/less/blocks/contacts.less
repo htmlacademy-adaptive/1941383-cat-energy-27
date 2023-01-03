@@ -10,13 +10,13 @@
   justify-items: end;
 
   @media (min-width: @tablet-width) {
-    padding: 58px 70px;
+    padding: 58px 70px 61px 71px;
     grid-template-columns: repeat(2, 160px);
   }
 
   @media (min-width: @desktop-width) {
     width: 565px;
-    padding: 26px 80px;
+    padding: 49px 80px;
   }
 }
 
@@ -41,7 +41,13 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    list-style: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-top: -3px;
   }
 }
 
