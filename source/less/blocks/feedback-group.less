@@ -12,12 +12,24 @@
   display: flex;
   row-gap: 13px;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    gap: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
 }
 
 .feedback-group__item {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   gap: 13px;
+}
+
+.feedback-group__label {
+
 }
 
 .feedback-group__input {
@@ -28,7 +40,7 @@
   min-height: 45px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
-  padding: 14px 20px 14px 20px;
+  padding-left: 20px;
 
   &:hover {
     border-color: #cdcdcd;
@@ -37,4 +49,9 @@
   &:focus-visible {
     outline: 2px solid #444444;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 11px 0 11px 20px;
+  }
+
 }

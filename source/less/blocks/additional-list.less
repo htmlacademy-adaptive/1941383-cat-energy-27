@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
-    gap: 54px;
+    gap: 53px;
 
     &::before {
       border: 2px solid #cdcdcd;
@@ -24,10 +24,10 @@
 
   @media (min-width: @desktop-width) {
     gap: 0;
+    padding-bottom: 0;
 
     &::before {
-      border-left: none;
-      border-right: none;
+      border: none;
     }
   }
 }

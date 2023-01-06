@@ -57,6 +57,7 @@
   @media (min-width: @desktop-width) {
     justify-content: center;
     margin: 0;
+    padding: 0;
 
     background-image: url("/img/cat-in-bag-desktop@1x.png");
 
@@ -66,7 +67,7 @@
 
     &::before {
       top: 56px;
-      left: center;
+      left: 85px;
     }
   }
 }
@@ -83,11 +84,13 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 124px;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 185px;
     padding-bottom: 42px;
     padding-right: 0;
+    text-align: center;
   }
 }

@@ -38,8 +38,11 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
+    display: flex;
     justify-self: center;
     margin-top: 77px;
+    width: 560px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,9 +53,21 @@
 }
 
 .proofs__slider-image {
-  @media (min-width: @tablet-width) {
-    width: 560px;
-  }
+  height: 512px;
+  background-repeat: no-repeat;
+}
+
+.proofs__slider-left {
+  background-image: url("/img/fat-cat-slider-mobile1x.png");
+  width: 50%;
+  margin-left: 25%;
+  background-position: left;
+}
+
+.proofs__slider-right {
+  background-image: url("/img/thin-cat-slider-mobile1x.png");
+  margin-right: 25%;
+  background-position: right;
 }
 
 .proofs__title {
