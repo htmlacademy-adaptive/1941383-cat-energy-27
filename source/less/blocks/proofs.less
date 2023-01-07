@@ -35,14 +35,11 @@
 
 .proofs__slider {
   grid-column: 1/-1;
-  display: flex;
+  justify-self: center;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
-    display: flex;
-    justify-self: center;
     margin-top: 77px;
-    width: 560px;
     position: relative;
   }
 
@@ -51,43 +48,6 @@
     top: 0;
     right: 0;
   }
-}
-
-.proofs__slider-image {
-  height: 256px;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    height: 512px;
-  }
-}
-
-.proofs__slider-left {
-  background-image: url("/img/fat-cat-slider-mobile1x.png");
-  background-position: left;
-  position: relative;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("/img/fat-cat-slider-tablet@1x.png");
-    background-size: cover;
-  }
-}
-
-.proofs__slider-right {
-  background-image: url("/img/thin-cat-slider-mobile1x.png");
-  background-position: right;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("/img/thin-cat-slider-tablet@1x.png");
-    background-size: cover;
-  }
-}
-
-.proofs__slider-range-toggle {
-  position: absolute;
-  right: 0;
-  background: url("/img/range-toggle.svg") no-repeat center;
-  background-size: contain;
 }
 
 .proofs__title {

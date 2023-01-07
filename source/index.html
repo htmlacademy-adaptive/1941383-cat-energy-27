@@ -135,13 +135,12 @@
 
 
 
-        <div class="proofs__slider">
-          <div class="proofs__slider-image proofs__slider-left" style="left: 0;
-          width: 50%;">
-            <button class="proofs__slider-range-toggle" type="button"></button>
+        <div class="proofs__slider slider">
+          <div class="slider__image-wrapper">
+            <div class="slider__half-wrapper slider__half-wrapper--left" style="width: 50%;"></div>
+            <div class="slider__half-wrapper slider__half-wrapper--right" style="width: 50%;"></div>
           </div>
-          <div class="proofs__slider-image proofs__slider-right" style="right: 0;
-          width: 50%;"></div>
+          <input class="slider__range" type="range" value="50" min="0" max="100">
         </div>
     </section>
 
@@ -211,6 +210,7 @@
   </footer>
 
   <script src="/js/script.js"></script>
+  <script src="/js/slider.js"></script>
 </body>
 
 </html>
