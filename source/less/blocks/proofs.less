@@ -35,6 +35,7 @@
 
 .proofs__slider {
   grid-column: 1/-1;
+  display: flex;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
@@ -53,21 +54,32 @@
 }
 
 .proofs__slider-image {
-  height: 512px;
+  height: 256px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+  }
 }
 
 .proofs__slider-left {
   background-image: url("/img/fat-cat-slider-mobile1x.png");
-  width: 50%;
-  margin-left: 25%;
   background-position: left;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/fat-cat-slider-tablet@1x.png");
+    background-size: cover;
+  }
 }
 
 .proofs__slider-right {
   background-image: url("/img/thin-cat-slider-mobile1x.png");
-  margin-right: 25%;
   background-position: right;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/thin-cat-slider-tablet@1x.png");
+    background-size: cover;
+  }
 }
 
 .proofs__title {
