@@ -1,14 +1,26 @@
+.feedback-form {
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+  }
+}
+
 .feedback-form__wrapper-group {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 280px;
-  row-gap: 24px;
+  row-gap: 14px;
   justify-content: center;
+  padding-top: 36px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 630px;
     align-items: center;
-    row-gap: 71px;
+    row-gap: 15px;
+    padding-top: 71px;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,13 +32,15 @@
 .feedback-form__group {
   margin: 0;
   margin-bottom: 22px;
+  display: grid;
+  row-gap: 26px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
     width: 638px;
     margin: 0 auto;
-    gap: 72px;
+    gap: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -51,23 +65,26 @@
     gap: 61px;
     grid-template-columns: repeat(2, 282px);
     margin-bottom: 72px;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    grid-template-columns: repeat(2, 586px);
+    width: 1220px;
+    grid-template-columns: repeat(2, 569px);
     gap: 81px;
-    margin-bottom: 82px;
+    margin-bottom: 84px;
   }
 }
 
 .feedback-form__submit {
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: @main-color;
   color: @main-color-2;
-  padding: 7px 0;
+  border: none;
+  padding: 10px 0;
 
   &:hover {
     background-color: #5eaa2f;
@@ -82,5 +99,18 @@
     line-height: 26px;
     font-size: 20px;
     padding: 13px 0;
+  }
+}
+
+.feedback-form__footnote {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    justify-self: flex-start;
   }
 }

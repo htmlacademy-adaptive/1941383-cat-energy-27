@@ -4,19 +4,35 @@
   margin: 0;
   padding: 0;
   border: none;
+  padding-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 73px;
+  }
 }
 
 .feedback-contacts__legend {
   font-size: 24px;
   line-height: 26px;
+  width: 182px;
+  padding: 0 20px;
+  margin-left: -20px;
 
   display: inline-block;
   position: relative;
   background-color: #ffffff;
+  color: #000000;
 
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    width: 512px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 }

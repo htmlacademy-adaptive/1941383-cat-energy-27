@@ -1,14 +1,25 @@
 .main-features {
   background-color: @main-color-2;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .main-features__title {
   .medium-text;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 71px;
   }
 }
