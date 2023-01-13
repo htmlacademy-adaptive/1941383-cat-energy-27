@@ -71,7 +71,7 @@ gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
@@ -84,7 +84,7 @@ gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 //Copy
 const copy = (done) => {
 gulp.src([
-  'source/fonts/*.{woff2,woff}',
+  'source/fonts/**/*.{woff2,woff}',
   'source/*.ico',
   'source/manifest.webmanifest'
   ], {
@@ -96,7 +96,7 @@ gulp.src([
 
 //Clean
 
-  const clean = () => {
+const clean = () => {
   return del('build');
   };
 
