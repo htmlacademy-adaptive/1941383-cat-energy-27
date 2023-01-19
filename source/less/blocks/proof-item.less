@@ -1,5 +1,13 @@
 .proof-item {
   position: relative;
+}
+
+.proof-item__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 
   &::before {
     content: "";
@@ -9,21 +17,16 @@
     border: 1px solid #cdcdcd;
     border-radius: 3px;
     box-sizing: border-box;
+    top: -10px;
   }
 
   @media (min-width: @tablet-width) {
     &::before {
       width: 162px;
       height: 72px;
+      top: -15px;
     }
   }
-}
-
-.proof-item__stats {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .proof-item__description {
