@@ -95,12 +95,16 @@
 }
 
 .main-header__menu--nojs .main-header__toggle {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
 .main-header__menu--nojs .main-nav .main-nav__list {
-  position: static;
-  display: block;
+  @media (max-width: @mobile-width-only) {
+    position: static;
+    display: block;
+  }
 }
 
 .main-header__menu.main-header__menu--nojs {
