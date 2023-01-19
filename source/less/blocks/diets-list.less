@@ -184,10 +184,6 @@
   text-transform: uppercase;
   position: relative;
 
-  &:active {
-    opacity: 30%;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -195,8 +191,27 @@
     height: 12px;
     background: url("/img/arrow__catalog.svg") no-repeat center;
     background-size: cover;
-    right: -47%;
-    top: 18%;
+    right: -50px;
+    top: 32%;
+    transition-duration: 0.2s;
+  }
+
+  &:hover {
+    opacity: 80%;
+
+    &::before {
+      width: 32px;
+      right: -58px;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+
+    &::before {
+      width: 32px;
+      right: -58px;
+    }
   }
 
   @media (min-width: @tablet-width) {
