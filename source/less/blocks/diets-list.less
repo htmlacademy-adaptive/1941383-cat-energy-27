@@ -173,6 +173,8 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -191,8 +193,8 @@
     height: 12px;
     background: url("/img/arrow__catalog.svg") no-repeat center;
     background-size: cover;
-    right: -50px;
-    top: 32%;
+    top: 4px;
+    right: -41px;
     transition-duration: 0.2s;
   }
 
@@ -217,5 +219,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      top: 10px;
+      right: -50px;
+    }
   }
 }
