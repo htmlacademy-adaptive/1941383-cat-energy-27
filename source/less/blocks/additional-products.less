@@ -5,7 +5,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 64px;
-    padding-bottom: 76px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,12 +22,16 @@
   position: relative;
   display: inline-block;
   margin: 0;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin-left: -21px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-left: 38px;
     padding-right: 38px;
+    margin-left: 2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,6 +56,9 @@
     gap: 80px;
     grid-template-columns: 3fr 245px;
     padding: 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 80px;
   }
 }
 

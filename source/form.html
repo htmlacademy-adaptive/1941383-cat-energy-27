@@ -81,21 +81,21 @@
           <fieldset class="feedback-diet">
             <ul class="feedback-diet__list form-container--second">
               <li class="feedback-diet__item">
+                <input class="feedback-diet__input visually-hidden" type="radio" id="weight-loss" name="feedback-diet-option" value="Похудение" checked>
                 <label class="feedback-diet__label " for="weight-loss">
-                  <input class="feedback-diet__input visually-hidden" type="radio" id="weight-loss" name="feedback-diet-option" value="Похудение" checked>
                   <span class="feedback-diet__control"></span>
                   <span class="feedback-diet__control-label">Похудение</span>
                 </label>
               </li>
               <li class="feedback-diet__item">
+                <input class="feedback-diet__input visually-hidden" type="radio" id="weight-gain" name="feedback-diet-option" value="Набор массы">
                 <label class="feedback-diet__label" for="weight-gain">Набор массы
-                  <input class="feedback-diet__input visually-hidden" type="radio" id="weight-gain" name="feedback-diet-option" value="Набор массы">
                   <span class="feedback-diet__control"></span>
                 </label>
               </li>
               <li class="feedback-diet__item">
+                <input class="feedback-diet__input visually-hidden" type="radio" id="need-advice" name="feedback-diet-option" value="Не знаю (нужен ваш совет)">
                 <label class="feedback-diet__label" for="need-advice">Не знаю (нужен ваш совет)
-                  <input class="feedback-diet__input visually-hidden" type="radio" id="need-advice" name="feedback-diet-option" value="Не знаю (нужен ваш совет)" >
                   <span class="feedback-diet__control"></span>
                 </label>
               </li>
@@ -115,7 +115,7 @@
             <ul class="feedback-form__wrapper-group feedback-contacts__list contacts-list">
               <li class="contacts-list__item">
                 <label class="contacts-list__label" for="email">E-mail:*
-                  <input class="contacts-list__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="contacts-list__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                   <svg class="contacts-list__icon-email" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="./img/icons/sprite.svg#icon-email" />
                   </svg>
@@ -156,32 +156,31 @@
           <div class="form-container">
             <ul class="feedback-additionally__comments-list">
               <li class="feedback-additionally__item">
+                <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
                 <label class="feedback-additionally__label" for="sweetener">сахарозаменитель
-                  <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
                   <span class="feedback-additionally__control"></span>
                 </label>
 
               </li>
               <li class="feedback-additionally__item">
+                <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="water" value="water">
                 <label class="feedback-additionally__label" for="water">питьевая вода
-                  <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="water" value="water">
                   <span class="feedback-additionally__control"></span>
                 </label>
 
               </li>
               <li class="feedback-additionally__item">
+                <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="milk" value="milk">
                 <label class="feedback-additionally__label" for="milk">молоко
-                  <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="milk" value="milk">
                   <span class="feedback-additionally__control"></span>
                 </label>
 
               </li>
               <li class="feedback-additionally__item">
+                <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="vitamins" value="vitamins">
                 <label class="feedback-additionally__label" for="vitamins">витамины
-                  <input class="feedback-additionally__input visually-hidden" type="checkbox" name="additionally" id="vitamins" value="vitamins">
                   <span class="feedback-additionally__control"></span>
                 </label>
-
               </li>
             </ul>
           </div>
@@ -198,13 +197,15 @@
 
   <footer class="page-footer">
 
-    <section class="page-footer__contacts contacts page-footer__contacts--color2">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</p>
-      <p class="contacts__description">
-        <span>ул. Большая Конюшенная, д. 19/8</span>
-        <span>Санкт-Петербург</span>
-      </p>
+    <section class="page-footer__container">
+      <div class="page-footer__contacts contacts page-footer__contacts--color2">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</p>
+        <p class="contacts__description">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </p>
+      </div>
     </section>
 
     <section class="page-footer__map">
