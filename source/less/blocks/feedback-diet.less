@@ -84,6 +84,21 @@
   }
 }
 
+.feedback-diet__container {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 631px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
+}
+
 .feedback-diet__input[type="radio"]:checked + .feedback-diet__label .feedback-diet__control::after {
   content: "";
   position: absolute;
