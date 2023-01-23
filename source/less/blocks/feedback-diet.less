@@ -84,7 +84,7 @@
   }
 }
 
-.feedback-diet__input[type="radio"]:checked + .feedback-diet__control::after {
+.feedback-diet__input[type="radio"]:checked + .feedback-diet__label .feedback-diet__control::after {
   content: "";
   position: absolute;
   width: 13px;
@@ -96,4 +96,12 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.feedback-diet__input[type="radio"]:hover + .feedback-diet__label .feedback-diet__control {
+  border: 1px solid #bababa;
+}
+
+.feedback-diet__input[type="radio"]:disabled + .feedback-diet__label {
+  opacity: 0.3;
 }

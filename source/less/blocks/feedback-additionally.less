@@ -90,7 +90,7 @@
   }
 }
 
-.feedback-additionally__input[type="checkbox"]:checked + .feedback-additionally__control::after {
+.feedback-additionally__input[type="checkbox"]:checked + .feedback-additionally__label .feedback-additionally__control::after {
   content: "";
   position: absolute;
   width: 13px;
@@ -101,4 +101,16 @@
     width: 26px;
     height: 26px;
   }
+}
+
+.feedback-additionally__input[type="checkbox"]:hover + .feedback-additionally__label .feedback-additionally__control {
+  outline: 1px solid #bababa;
+}
+
+.feedback-additionally__input[type="checkbox"]:focus-visible + .feedback-additionally__label .feedback-additionally__control {
+  outline: 1px solid #bababa;
+}
+
+.feedback-additionally__input:disabled + .feedback-additionally__label {
+  opacity: 0.3;
 }
